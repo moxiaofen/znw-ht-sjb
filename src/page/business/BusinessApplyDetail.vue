@@ -135,7 +135,7 @@
               'productId' : this.vProductId ,
               'acctReceiveableInfos' : this.dataReceivablesLists          
           };
-          //console.log(data)
+          console.log(data)
           this.$http.post(url,{
             'businessType':this.vBusinessType,
             'msgData':data, 
