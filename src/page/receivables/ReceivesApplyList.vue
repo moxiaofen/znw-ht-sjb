@@ -115,14 +115,14 @@
            }
            this.$http.post(url,data)
            .then(function (res) {
-               console.log(res)
+               //console.log(res)
                const data = JSON.parse(res.data);
                if(data.respCode == '999999'){
                   this.$toast(data.respMsg)
                }else{
                   const records = data.records
-                  console.log(records)
-                  console.log(records[1])
+                  //console.log(records)
+                  //console.log(records[1])
                   if (records == null || records.length === 0) {
                     // 加载结束
                     this.upFinished = true

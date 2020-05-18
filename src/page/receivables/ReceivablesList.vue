@@ -114,7 +114,7 @@
                   this.$toast(data.respMsg)
                }else{
                   const records = data.account;
-                  console.log(records)
+                  //console.log(records)
                   if (records == null || records.length === 0) {
                     // 加载结束
                     this.upFinished = true

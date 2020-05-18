@@ -74,7 +74,7 @@
             }) 
           },
           del(index){
-              console.log(index)            
+              //console.log(index)            
               if(sessionStorage.getItem('addReceivales')=='0'){//从应收账款转让跳转过来的
                   this.$store.state.addReceivablesApplyList.shift(index)
               }else{

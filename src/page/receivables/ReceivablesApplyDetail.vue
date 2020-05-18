@@ -82,7 +82,7 @@
           //this.$http.post(url,{"applyNo": "SJ2019083000323"})  
            .then(function (res) {
                   this.resData = JSON.parse(res.data); 
-                  console.log(this.resData) 
+                  //console.log(this.resData) 
                   this.accountList = this.resData.accountList             
               })
               .catch(function () {

@@ -111,7 +111,7 @@
                 const url = this.$api.ROOT + this.$Constants.QUERY_PRODUCT_LIST;
                 this.$http.post(url,{factoringProduct : {businessCategory:'03'}})
                     .then(function (res) {
-                        console.log(res)
+                        //console.log(res)
                         const data = JSON.parse(res.data);
                         this.productLists = data.product;
                         

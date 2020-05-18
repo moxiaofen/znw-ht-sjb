@@ -63,6 +63,9 @@
     },
     methods: {
     },
+    destroyed(){
+       sessionStorage.removeItem('paymentItem')
+    }
   }
 </script>
 

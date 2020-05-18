@@ -106,12 +106,12 @@
           //this.$http.post(url,{"assetsNo": 'ABSCI2019081600000027'})
               .then(function (res) {
                   this.resData = JSON.parse(res.data); 
-                  console.log(this.resData)  
+                  //console.log(this.resData)  
                   this.assetsList = this.resData.assetsList  
                   this.tip = (this.assetsList.length<1) ? true:false;
                   this.fileList = this.resData.fileList 
                   this.tipFile = (this.fileList.length<1) ? true:false; 
-                  console.log(this.assetsList)
+                  //console.log(this.assetsList)
 
               })
               .catch(function () {

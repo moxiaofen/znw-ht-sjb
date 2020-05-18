@@ -54,7 +54,7 @@ export default {
       this.contractType =  this.pdfData.contractType
       //this.contractType ='L'//假数据
       //this.pdfData = this.$store.state.pdfData
-      console.log(this.pdfData)
+      //console.log(this.pdfData)
       this.contractNo = this.pdfData.contractNo
       this.tab = this.$route.query.tab;
       var src='';
@@ -134,6 +134,9 @@ export default {
               this.$toast(this.$ERRCODE.STATIC_ERRORCDDE.EXCEPTION);
             });        
       },
+  },
+  destroyed(){
+      sessionStorage.removeItem('pdfData')
   }
 }
 </script>

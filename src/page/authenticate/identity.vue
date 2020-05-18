@@ -162,7 +162,7 @@
                 "idType":idType,
                 "idNo":idNo                        
               }       
-              console.log(data)
+              //console.log(data)
               this.enable = false ; //设置按钮不可用，防止重复点击
               const url = this.$api.ROOT +this.$Constants.QUERY_AUTHENTY_RESULT;
               this.$indicator.open("请稍候...");   

@@ -113,7 +113,7 @@
           handleFile() {
               //console.log()
               const file = this.$refs.inputImg.files[0]
-              console.log(file)
+              //console.log(file)
               if(Math.round(file.size/1024*100)/100 >1024*10){
                   this.$toast("文件大小不能大于10m !");
                   return
@@ -135,7 +135,7 @@
             //   this.vFileName = this.$refs.inputImg.files[0].name;
             //   var fd = new FormData();
             //   fd.append('file',this.$refs.inputImg.files[0])
-             console.log(dataFile)
+             //console.log(dataFile)
              return dataFile
           },
           //企业认证上传列表确定
@@ -149,7 +149,7 @@
               const dataFile = this.handleFile();
               dataFile.fileInput = this.$refs.img.src.split(",")[1];
               this.dataFileList.push(dataFile);
-              console.log(this.dataFileList);
+              //console.log(this.dataFileList);
               this.show = false;
           },
           //删除企业认证列表

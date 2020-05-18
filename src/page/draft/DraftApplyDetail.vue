@@ -103,7 +103,7 @@
     },
     created(){
         this.loanInfo = JSON.parse(sessionStorage.getItem('loanInfo')) 
-        console.log(this.loanInfo)
+        //console.log(this.loanInfo)
         this.queryContractList()
     },
     mounted() {
@@ -150,7 +150,7 @@
            this.$http.post(url,data)
            .then(function (res) {              
                 this.resData = JSON.parse(res.data);
-                console.log(this.resData)          
+                //console.log(this.resData)          
           }).catch(function () {
              this.$toast(this.$ERRCODE.STATIC_ERRORCDDE.EXCEPTION);
           })
@@ -175,10 +175,10 @@
            //console.log(repData)
            this.$http.post(url,{'loanInfoApply' : repData })
            .then(function (res) {
-                console.log(res)
+                //console.log(res)
                 var resData = JSON.parse(res.data); 
                 resData = JSON.parse(resData)
-                console.log(resData)
+                //console.log(resData)
                 if (resData.respCode === '000000') {
                    this.$router.go(-1)
                    this.$toast('操作成功！'); 
@@ -191,6 +191,9 @@
           })
       },
 
+    },
+    destroyed(){
+       sessionStorage.removeItem('loanInfo')
     }
 
   }

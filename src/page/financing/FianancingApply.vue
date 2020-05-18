@@ -203,7 +203,7 @@
           month =''+'0'+month
         }
         this.dateTime=`${date.getFullYear()}${month}${date.getDate()}`
-        console.log(this.dateTime)
+        //console.log(this.dateTime)
 
         return `${date.getFullYear()}年${date.getMonth() + 1}月${date.getDate()}日`;
       },
@@ -254,6 +254,9 @@
         vApplyAmt(){
             this.vAmt = parseFloat(this.vPercentage)*parseFloat(this.vApplyAmt)/100
         }
+    },
+    destroyed(){
+       sessionStorage.removeItem('FianancingApply')
     }
 
   }

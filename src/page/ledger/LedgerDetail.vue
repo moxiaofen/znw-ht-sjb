@@ -155,9 +155,9 @@
           this.$http.post(url,{"contractNo": this.id})
               .then(function (res) {
                   this.resData = JSON.parse(res.data); 
-                  console.log(this.resData) 
+                  //console.log(this.resData) 
                   this.acctList = this.resData.acctList  
-                   console.log(this.acctList)  
+                   //console.log(this.acctList)  
                   this.tip = (this.acctList.length<1) ? true:false;
                   this.paymentList = this.resData.paymentList 
                   this.tipPayment = (this.paymentList.length<1) ? true:false;

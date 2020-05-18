@@ -239,7 +239,7 @@
           month =''+'0'+month
         }
         this.dateTime=`${date.getFullYear()}${month}${date.getDate()}`
-        console.log(this.dateTime)
+        //console.log(this.dateTime)
         return `${date.getFullYear()}年${date.getMonth() + 1}月${date.getDate()}日`;
       },
       onConfirm1(date) {
@@ -273,7 +273,7 @@
             'remark' : this.vRemark ,
             'fileList' : this.dataFileList
         }
-        console.log(acctList)
+        //console.log(acctList)
         if(sessionStorage.getItem('addReceivales')=='0'){//从应收账款转让跳转过来的
           this.$store.state.addReceivablesApplyList.push(acctList) ;
           this.$router.go(-1);

@@ -102,7 +102,7 @@
             this.vBusinessType = '04';
             this.title = '业务申请'
             this.routeData =this.$store.state.fianancingApply;
-            console.log(this.routeData )
+            //console.log(this.routeData )
             this.vProductName = this.routeData.projectName
             this.vProductNo = this.routeData.projectNo
         }else{

@@ -83,6 +83,9 @@
     },
     methods: {     
     },
+    destroyed(){
+       sessionStorage.removeItem('refactoringItem')
+    }
 
   }
 </script>

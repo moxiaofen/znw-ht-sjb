@@ -135,7 +135,7 @@
                 amt : this.vAmt 
               }
               this.dataReceivablesList.push(dataFile);
-              console.log(this.dataReceivablesList);
+              //console.log(this.dataReceivablesList);
               this.show = false;
               this.totalNum = Number(this.totalNum)+ Number( this.vNum )
               this.totalMoney = Number(this.totalMoney)+ Number( this.vAmt )

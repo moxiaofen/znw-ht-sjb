@@ -87,7 +87,7 @@
           month =''+'0'+month
         }
         this.dateTime=`${date.getFullYear()}${month}${date.getDate()}`
-        console.log(this.dateTime)
+        //console.log(this.dateTime)
         return `${date.getFullYear()}年${date.getMonth() + 1}月${date.getDate()}日`;
       },
       onConfirm1(date) {

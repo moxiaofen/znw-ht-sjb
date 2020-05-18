@@ -71,10 +71,13 @@
       }
     },
     created() {
-        this.resData =JSON.parse(sessionStorage.getItem('brokerItem'))
+        this.resData = JSON.parse(sessionStorage.getItem('brokerItem'))
     },
     methods: {
     },
+    destroyed(){
+       sessionStorage.removeItem('brokerItem')
+    }
 
   }
 </script>

@@ -54,8 +54,8 @@ export default {
               return
           }       
           this.creditContractNo = this.creditList[this.radio].creditContractNo; 
-          console.log(this.creditList[this.radio].creditContractNo)
-          console.log(this.radio)
+          //console.log(this.creditList[this.radio].creditContractNo)
+          //console.log(this.radio)
          
           this.$router.push({
             path: this.$RM.AddReceivablesApply,

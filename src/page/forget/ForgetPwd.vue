@@ -171,7 +171,7 @@
       },
       // 确认账号 toComfirmAccount 
       toComfirmAccount(){
-        console.log('确认账号')
+        //console.log('确认账号')
         //确认账号前，判断手机格式是否正确
         if (!this.$utils.checkPhone(this.vUserPhone)) {
               this.$toast(this.$ERRCODE.STATIC_ERRORCDDE.RTN_201018);
@@ -187,11 +187,11 @@
             const resDate = JSON.parse(res.data) ; 
             if (resDate.respCode == '000000') {
               this.$indicator.close();
-              console.info("确认账号成功...");
+              //console.info("确认账号成功...");
               sessionStorage.removeItem("cacheForgetPhone");
               sessionStorage.setItem("cacheForgetPhone", this.vUserPhone)//提供给忘记密码用
               this.sessionID = resDate.sessionID;
-              console.log(this.sessionID)
+              //console.log(this.sessionID)
             }
             else {
               this.$indicator.close();
@@ -211,63 +211,63 @@
         const url = this.$api.ROOT +this.$Constants.APP_CHECKCODE;
         this.$indicator.open("请稍候...");
         const  data = {"telNo":this.vUserPhone,"code":this.vYanCode}
-        console.log(data)
+        //console.log(data)
         this.$http.post(url, data)
           .then(function (res) {
-            console.log(res);
+            //console.log(res);
             const resDate = JSON.parse(res.data) ; 
             if (resDate.respCode == '000000') {
               this.$indicator.close();
-              console.info("确认验证码成功...");
+              //console.info("确认验证码成功...");
               this.error = ""
             }
             else {
               this.$indicator.close();
-              console.warn("确认验证码失败!!!");
+              //console.warn("确认验证码失败!!!");
               this.$toast(resDate.respMsg);
               this.error = "1"
             }
           })
           .catch(function (error) {
             this.$indicator.close();
-            console.error(error);
+            //console.error(error);
             this.$toast(this.$ERRCODE.STATIC_ERRORCDDE.EXCEPTION);
             this.error = "1"
           });
-        console.info('>>>>>>>>>>>>确认验证码>>>>end>>>>>>>>')
+        //console.info('>>>>>>>>>>>>确认验证码>>>>end>>>>>>>>')
       },
       //安全认证 toSafeCertify 
       toSafeCertify(){
         //先确认验证码
-        console.log('安全认证')
+        //console.log('安全认证')
         this.toCheckCode();
         const url = this.$api.ROOT +this.$Constants.APP_FORGETPSWB;
         this.$indicator.open("请稍候...");
         const  data = {"mobilePhone": this.vUserPhone,"imgCode":this.vYanCode,"sessionID":this.sessionID}
-        console.log(data)
+        //console.log(data)
         this.$http.post(url, data)
           .then(function (res) {
-            console.log(res);
+            //console.log(res);
             const resDate = JSON.parse(res.data) ; 
             if (resDate.respCode == '000000') {
               this.$indicator.close();
-              console.info("验证码安全认证成功...");
+              //console.info("验证码安全认证成功...");
               this.error2 = false
             }
             else {
               this.$indicator.close();
-              console.warn("验证码安全认证失败!!!");
+              //console.warn("验证码安全认证失败!!!");
               //this.$toast(resDate.respMsg);
               this.error2 = true
             }
           })
           .catch(function (error) {
             this.$indicator.close();
-            console.error(error);
+            //console.error(error);
             this.$toast(this.$ERRCODE.STATIC_ERRORCDDE.EXCEPTION);
             this.error2 = true
           });
-        console.info('>>>>>>>>>>>>安全认证>>>>end>>>>>>>>')
+        //console.info('>>>>>>>>>>>>安全认证>>>>end>>>>>>>>')
   
       },
       //设置密码
@@ -309,8 +309,8 @@
         //开始请求 忘记密码接口
         var reqId = this.$utils.generateSignTime();
         var encStr = Encrypt.msg_md5(this.vSetPwd1).toString();
-        console.log(this.vSetPwd1)
-        console.info('>>>密码>>>' + encStr)
+        //console.log(this.vSetPwd1)
+        //console.info('>>>密码>>>' + encStr)
         const  url=this.$api.ROOT +this.$Constants.APP_FORGETPSWC;
         this.$indicator.open("请稍候...");
 
@@ -339,7 +339,7 @@
             this.$toast(this.$ERRCODE.STATIC_ERRORCDDE.EXCEPTION);
             this.enable = true;
           });
-        console.info('>>>>>>>>>忘记密码>>>>end>>>>')
+        //console.info('>>>>>>>>>忘记密码>>>>end>>>>')
       },
       async toForgetPwd(){
            await this.toSafeCertify()
@@ -359,7 +359,7 @@
       if (!this.$StringUtils.isEmpty(cacheForgetPhone)) {
         if (tempPhone.test(cacheForgetPhone)) {
           this.vUserPhone = cacheForgetPhone
-          console.info("用户在上一次登陆的缓存手机号>>>" + cacheForgetPhone)
+          //console.info("用户在上一次登陆的缓存手机号>>>" + cacheForgetPhone)
           this.toComfirmAccount()
         }   
       } 

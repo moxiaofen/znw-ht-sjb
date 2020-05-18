@@ -103,7 +103,7 @@
               return
            } 
            this.queryType = tabIndex == '0' ?  "00": "01";
-           console.log(this.queryType)        
+           //console.log(this.queryType)        
            const url = this.$api.ROOT + this.$Constants.GET_CONTRACT_LIST;
            this.contractList = [];
            const data = {
@@ -117,8 +117,8 @@
            .then(function (res) {
                const data = JSON.parse(res.data);
                const records = data.records
-               console.log(res)
-               console.log(records)
+               //console.log(res)
+               //console.log(records)
               if (records == null || records.length === 0) {
                 // 加载结束
                 this.upFinished = true

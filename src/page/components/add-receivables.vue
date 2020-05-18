@@ -167,7 +167,7 @@
             'status' : this.vStatus ,
             'fileList' : this.dataFileList
         }
-        console.log(acctList)
+        //console.log(acctList)
         this.$router.go(-1);
       },
     }

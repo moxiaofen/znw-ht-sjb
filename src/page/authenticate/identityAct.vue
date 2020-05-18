@@ -254,7 +254,7 @@
           },
           //人脸识别2--获取认证的信息
           getAuthResult(){
-            console.log(2)
+              //console.log(2)
               const data={
                 "custNo":sessionStorage.getItem('custNo'),
                 "ruleId":"2",

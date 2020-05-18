@@ -94,7 +94,7 @@
              "pageLength":this.pageSize,
              "assetsBroker":{"absName":""}
            }
-           console.log(data)
+           //console.log(data)
            this.$http.post(url,data)
            .then(function (res) {
                const data = JSON.parse(res.data);

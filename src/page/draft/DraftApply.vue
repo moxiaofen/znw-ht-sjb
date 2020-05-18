@@ -76,9 +76,9 @@
            this.$http.post(url,data)
            //this.$http.post(url,{"creditContract":data})
            .then(function (res) { 
-             console.log(res)
+             //console.log(res)
                const data = JSON.parse(res.data);
-               console.log(data)
+               //console.log(data)
                this.contractList = JSON.parse(res.data)
           }).catch(function () {
              this.$toast(this.$ERRCODE.STATIC_ERRORCDDE.EXCEPTION);
