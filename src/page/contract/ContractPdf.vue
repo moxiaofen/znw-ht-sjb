@@ -86,7 +86,11 @@ export default {
       //     }
       // }
       //全部需要人脸识别
-      this.faceIdAuthenty()
+      //this.faceIdAuthenty()
+      this.id = this.$route.query.id;
+      if(this.id!=0){
+          this.faceIdAuthenty()
+      }
   },
   methods:{
       loadPdfHandler() {
