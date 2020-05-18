@@ -168,7 +168,8 @@
       getCompanyInfo(){
           const url = this.$api.ROOT + this.$Constants.GET_COMPANY_INFO;
           const data = {
-              "custNo": 'C000250'
+              //"custNo": 'C000250'
+              "custNo":sessionStorage.getItem('custNo')
           }
           this.$http.post(url,data)//operType操作类型0.注册，1.登陆
             .then(function (res) {

@@ -117,7 +117,7 @@
       },
       submit(){
           //判断数据是否为空
-          if(this.vBusinessType=="04"){
+          if(this.vBusinessType=="05"){
             if(this.dataReceivablesLists.length<1){
                 this.$toast("请填写应收账款信息！");
                 return 

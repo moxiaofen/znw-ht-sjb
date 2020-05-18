@@ -60,7 +60,6 @@
 </template>
 
 <script>
-// avascript:(function () { var script = document.createElement('script'); script.src="//cdn.jsdelivr.net/npm/eruda"; document.body.appendChild(script); script.onload = function () { eruda.init() } })()
 
   import LoginButton from '@/components/LoginButton.vue'
   import { NavBar,DropdownMenu, DropdownItem,Cell } from 'vant';

@@ -59,6 +59,8 @@ const PersonInfoName = '/setting/PersonInfoName'
 const PersonInfoPsw = '/setting/PersonInfoPsw'
 const PersonInfoEmail = '/setting/PersonInfoEmail'
 const PersonInfoPhone = '/setting/PersonInfoPhone'
+//新加的页面--待改
+const NewPage = '/newpage/NewPage'
 
 
 export default {
@@ -116,5 +118,7 @@ export default {
   ReGisterProtocol,
   ////////////////////////////////////
   Netbroken,
+
+  NewPage,//新加的页面
 
 }

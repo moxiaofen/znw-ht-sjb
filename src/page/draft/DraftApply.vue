@@ -70,8 +70,8 @@
            const url = this.$api.ROOT + this.$Constants.FIND_CONTRACT_LIST;
            //const url = this.$api.ROOT + this.$Constants.QUERY_CONTRACT_LIST;
            const data = {
-             //"custNo":sessionStorage.getItem('custNo'),
-             "custNo":'C000250',
+             "custNo":sessionStorage.getItem('custNo'),
+             //"custNo":'C000250',
            }
            this.$http.post(url,data)
            //this.$http.post(url,{"creditContract":data})

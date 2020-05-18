@@ -59,6 +59,8 @@ import PersonInfoPsw from '@/page/setting/PersonInfoPsw'
 import PersonInfoEmail from '@/page/setting/PersonInfoEmail'
 import PersonInfoPhone from '@/page/setting/PersonInfoPhone'
 
+//新加页面
+import NewPage from '@/page/newpage/NewPage'
 
 Vue.use(Router);
 
@@ -351,6 +353,15 @@ export default new Router({
       name: RM.PersonInfoPhone,
       component: PersonInfoPhone
     },
+
+    //新加页面
+    {
+      path: RM.NewPage,
+      name: RM.NewPage,
+      component: NewPage
+    },
+
+    
 
 
   ],

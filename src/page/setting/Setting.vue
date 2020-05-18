@@ -64,34 +64,5 @@
 .cellBox {
     margin-top: 46px;
   }
-  /* .bg {
-    background-color: #fafafa;
-  } */
-/* .cellBox {
-    width: 100%;
-    margin-top: 50px;
-    box-sizing: border-box;
-  }
-
-  .cellBox .cell {
-    padding-left: 16px;
-    padding-right: 16px;
-    display: flex;
-    align-items: center;
-    height: 60px;
-    line-height: 60px;
-    background-color: #ffffff;
-    margin-bottom: 2px;
-  }
-
- .cellBox .cell img {
-  width: 20px;
-  height: 20px;
-  margin-right: 5px;
-}
-  .cellBox .cell span {
-    font-size: 17px;
-    color: #4F4F55;
-    vertical-align: middle;
-  } */
+ 
 </style>

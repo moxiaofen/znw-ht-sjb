@@ -48,12 +48,7 @@
         
         },
         methods: {
-          // toDetail(num) {
-          //   this.$router.push({
-          //     path: this.$RM.ReceivablesDetail,
-          //     query:{id: num}        
-          //   })
-          // },
+
           toDetail(item) {
             //this.$store.repaymentItem = item
             //this.$store.commit('setRepaymentItem',item)
@@ -77,86 +72,5 @@
 <style scoped>
 
 @import "../../css/common";
-
-
-  /* .top {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; 
-
-    position: relative;
-    padding: 0 16px;
-  }
-
-
-  .add-img {
-    width: 25px;
-    height: 25px;
-    padding: 10px 15px 9px
-  } 
-  .cont-sides{
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    flex-direction: row;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    background-color: #fafafa;
-  }
-
-  .receivables-lib {
-
-    border-bottom: 1px solid #000;
-  }
-
-  .img-type {
-    width: 40px;
-    height: 40px;
-  }
-
-  .item-receivables-line1 {
-    letter-spacing: 1px;
-    color: #c9c9c9;
-    font-size: 12px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-  }
-
-  .item-receivables-line2 {
-    display: flex;
-  }
-
-  .item-receivables-line3 {
-    display: flex;
-    margin-top: 5px;
-  }
-
-  .receivables-name {
-    color: #1f1f1f;
-    margin-left: 16px;
-    font-size: 18px;
-  }
-
-  .receivables-no {
-    color: #969696;
-    font-size: 12px;
-  }
-
-
-
-  .receivables-data {
-    margin-left: 16px;
-    color: #343434;
-    font-size: 13px;
-  }
-
-  .receivables-amount {
-    font-size: 19px;
-    margin-left: 16px;
-    color: #ff0000;
-  } */
-
 
 </style>

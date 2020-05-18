@@ -51,6 +51,11 @@
           
           cellList:[
              {
+                toKey : 'NewPage',
+                src : require('../../assets/iv_shenfenrenzheng.png'),
+                title : '新加页面'
+             },
+             {
                 toKey : 'AuthenticateId',
                 src : require('../../assets/iv_shenfenrenzheng.png'),
                 title : '身份认证查询'

@@ -127,10 +127,10 @@
       FindPoolLimitAmount() {          
            const url = this.$api.ROOT + this.$Constants.FIND_POOL_LIMIT_AMOUNT;
            const data = {
-             //"contractNo":this.loanInfo.contractNo,
-             //"custNo": sessionStorage.getItem('custNo'), 
-             "contractNo": "CON2019062800000079",
-             "custNo": "C000311"
+             "contractNo":this.loanInfo.contractNo,
+             "custNo": sessionStorage.getItem('custNo')
+            //  "contractNo": "CON2019062800000079",
+            //  "custNo": "C000311"
            }
            this.$http.post(url,data)
            .then(function (res) {
